@@ -9,21 +9,7 @@ h2 {
     margin-top: 20px;
 }
 
-#name {
-    margin-left: 110px;
-    margin-top: 20px;
-}
 
-#category {
-    margin-left: 120px;
-    margin-top: 20px;
-}
-
-
-#marks {
-    margin-left: 1px;
-    margin-top: 20px;
-}
 
 #main 
 {
@@ -31,4 +17,21 @@ h2 {
     width: 600px;
     height: 200px;
     background-color: lightgray;
+}
+
+
+#table {
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+th 
+{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+td 
+{
+    padding: 20px;
 }

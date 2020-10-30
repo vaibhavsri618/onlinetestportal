@@ -25,13 +25,22 @@ if (isset($_SESSION['userdata'])) {
     <body>
         <h2>Welcome <?php echo $name?> Your Previous Attempt Marks are:</h2><br>
         <div id="main">
-            <label class="label">UserName:</label>
-            <input type="text" id="name"  value=<?php echo $row['username']  ?> readonly> <br>
-            <label class="label">Category:</label>
-            <input type="text" id="category" value=<?php echo $row['category'] ?> readonly><br>
-            <label class="label"> Percentage of Marks Obtain:</label>
-            <input type="text" id="marks" value=<?php echo $row['mark'] ?> readonly><br>
-        
+            <table id="table" border=2px solid black>
+                <tr>
+                    <th>UserName</th>
+                    <th>Category</th>
+                    <th>Marks Obtain</th>
+                
+                </tr> 
+                <?php
+                    echo '<tr>';
+                    echo '<td>'.$row['username'] .'</td>';
+                    echo '<td>'.$row['category'] .'</td>';
+                    echo '<td>'.$row['mark'] .'</td>';
+                   
+                    echo '</tr>';
+                ?>
+            
         </div>
 
     </body>

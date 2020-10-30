@@ -15,6 +15,15 @@ if (isset($_SESSION['userdata'])) {
             $error[]=array("id"=>'form','msg'=>"Field cant be empty");
         }
 
+        $sql1 = "SELECT * FROM test WHERE name='".$name."'";
+        $result = $conn->query($sql1);
+    
+        if ($result->num_rows > 0) {
+            $error[]=array("id"=>'form','msg'=>"Same Question already present");
+    
+        } 
+
+
         $filename = $_FILES["image"]["name"]; 
         $tempname = $_FILES["image"]["tmp_name"];     
         $folder = "images/".$filename; 
