@@ -42,7 +42,7 @@ if (isset($_SESSION['userdata'])) {
 
 
 
-            }
+     
                 
             //echo $c;
             if ($per>39) {
@@ -51,9 +51,7 @@ if (isset($_SESSION['userdata'])) {
                 echo "<h4 id='h4'>Oops!!Hard Luck .... You have'nt clear the test</h4>";
             }
 
-        }
-    }
-}
+      
 ?>
 
 
@@ -99,9 +97,27 @@ if (isset($_SESSION['userdata'])) {
            
                 ?></p>
             </div>    
-            
+            <br>
+            <a href="homeuser.php" style="margin-left:500px;">GO Home </a>
+       
             </div>
         </div>
         
     </body>
 </html>
+
+                <?php
+
+            } else {
+                echo "<script>alert('Please Tick any question');
+                window.location='homeuser.php';
+                </script>";
+
+                
+            }
+
+        } 
+    }
+}
+
+?>

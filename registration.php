@@ -51,7 +51,7 @@ if (isset($_POST['submit'])) {
 
     $conn->close();
 
-    header("Location:home.html");
+    header("Location:home.php");
 }
 ?>
 
