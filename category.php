@@ -99,7 +99,6 @@ if (isset($_SESSION['userdata'])) {
             }
             ?>
                 
-            <h2 id="h2">Add Question for Aptitude Test</h2>
 
             <h4 id='error'><?php 
             if (count($error)>0) {
